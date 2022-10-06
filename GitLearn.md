@@ -76,5 +76,5 @@ Git branches tree
 ## Git checkout
 * git checkout <branch-name>    / viib repo üle uuele branchile
 
-## Git merge
+## Git bugfixmerge
 * git merge <branch-name>       / sulatab käesoleva branchi muudatused valitud branchiga
