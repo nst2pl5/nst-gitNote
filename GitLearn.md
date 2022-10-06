@@ -1,4 +1,5 @@
 ### GIT Associative/notes
+¤ https://www.atlassian.com/ru/git
 ¤ GIT Sheme: repo -> stg -> commit.
 ¤ Git commit arvutab kogu projekti hash summa ja alles siis kui vastav hash erineb eelmisest salvestab selle
 
@@ -14,6 +15,7 @@
 
 ## Git log
 * git log               / näitab muutuste logi projektis
+* git log --oneline     / näitab vastuseid 1 rea peal
 * git log -p            / näitab konkreetsed muudatused
 
 ## Git status
@@ -33,10 +35,13 @@
 ## Git commit
 * git commit                    / salvestab jooksva muudatuse
 * git commit -m "change text"   / salvestab muudatuse ja lisab kohe kommentaari
+* git commit -a -m "change text"   / salvestab muudatuse, lisab stg ja kohe kommentaari
 
 ## Git restore
 * git restore <file>    / viib faili eelmise commit olekusse
 
 ## Git diff
-* git diff              / näitab viimaseid muudatusi eelmisest commit
+* git diff              / näitab viimaseid muudatusi eelmisest commitist
+* git diff --staged     / näitab muudatusi mis on juba indekseeritud
 
+## Git 
