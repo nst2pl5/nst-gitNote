@@ -45,6 +45,7 @@
 
 ## Git restore
 * git restore <file>    / viib faili eelmise commit olekusse
+* git restore .         / viib kogu failide puu eelmise commiti olekusse
 
 ## Git diff
 * git diff              / näitab viimaseid muudatusi eelmisest commitist
@@ -64,4 +65,16 @@
 ¤ saab rakendada reeglid mida git ignoreerib
 * loo fail .gitignore
 
-## Git 
+================================================================================
+Git branches tree
+
+## Git branch
+* git branch -a                 / näitab kõiki repos olevaid branche
+* git branch <branch-name>      / loob uue branchi
+* git branch -d <branch-name>   / kustutab valitud branch (kui kasutada -D siis kustutab igalt poolt)
+
+## Git checkout
+* git checkout <branch-name>    / viib repo üle uuele branchile
+
+## Git merge
+* git merge <branch-name>       / sulatab käesoleva branchi muudatused valitud branchiga
