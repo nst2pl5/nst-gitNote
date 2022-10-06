@@ -64,4 +64,4 @@
 ¤ saab rakendada reeglid mida git ignoreerib
 * loo fail .gitignore
 
-## Git 
+## Git bugfix
