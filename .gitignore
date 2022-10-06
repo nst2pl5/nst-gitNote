@@ -1,0 +1,4 @@
+### Git ignore rules 
+# ignoreerib kogu log kausta ja faili log.md igalpool
+log/
+log.md

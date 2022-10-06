@@ -18,12 +18,16 @@
 * git log --oneline     / näitab vastuseid 1 rea peal
 * git log -p            / näitab konkreetsed muudatused
 
+## Git show
+* git show <commitNr>   / näitab commitis tehtud muudatusi
+
 ## Git status
 ¤ Failid saavad olla jälgitavas ja mitte jälgitavas olekus
 * git status            / näitab projekti olekut
 
 ## Git add
 ¤ Vaja lisada failid enne commiti stg
+¤ kui peale stg lisamist on tehtud veel muudatusi siis on vaja see fail uuesti lisada stg
 * git add <file>        / lisab faili stg
 * git add <directory>   / lisab terve repo
 * git add -p            / vali käsitsi mida lisada. (y, n, s, e, q)
@@ -33,9 +37,11 @@
 ¤ git add <file1> <file2>  ja commit need jne
 
 ## Git commit
-* git commit                    / salvestab jooksva muudatuse
-* git commit -m "change text"   / salvestab muudatuse ja lisab kohe kommentaari
-* git commit -a -m "change text"   / salvestab muudatuse, lisab stg ja kohe kommentaari
+* git commit                                            / salvestab jooksva muudatuse
+* git commit -m "change text"                           / salvestab muudatuse ja lisab kohe kommentaari
+* git commit -a -m "change text"                        / salvestab muudatuse, lisab stg ja kohe kommentaari
+* git commit --amend                                    / lisab muudatuse HEAD commiti
+* git commit --amend -m "change last commit text"       / lisab muudatuse HEAD commiti ja muudab commiti texti
 
 ## Git restore
 * git restore <file>    / viib faili eelmise commit olekusse
@@ -43,5 +49,19 @@
 ## Git diff
 * git diff              / näitab viimaseid muudatusi eelmisest commitist
 * git diff --staged     / näitab muudatusi mis on juba indekseeritud
+
+## Git mv
+¤ saab muuta faili nime ja liigutada folderite vahel
+¤ samuti mv rakendab kohe git add mõjutatavale failile
+* git mv <file-name> <new-name> || git mv <file> </to-directory>
+
+## Git rm
+¤ saab kustutada
+¤ rakendub kohe ja pole vaja git add to stg
+* git rm <file> || git rm <directory>
+
+## Git .gitignore
+¤ saab rakendada reeglid mida git ignoreerib
+* loo fail .gitignore
 
 ## Git 
