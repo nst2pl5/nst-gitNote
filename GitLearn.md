@@ -36,3 +36,7 @@
 
 ## Git restore
 * git restore <file>    / viib faili eelmise commit olekusse
+
+## Git diff
+* git diff              / näitab viimaseid muudatusi eelmisest commit
+
