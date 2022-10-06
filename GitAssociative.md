@@ -26,9 +26,9 @@
 * git add -p            / vali käsitsi mida lisada. (y, n, s, e, q)
 * git add .             / lisab kõik
 
-¤ Kui on vaja teha erinevatele failidele erinevad commit 
+¤ Kui on vaja teha erinevatele failidele erinevad commit
 ¤ git add <file1> <file2>  ja commit need jne
 
 ## Git commit
 * git commit                    / salvestab jooksva muudatuse
-* git commit -m 'change text'   / salvestab muudatuse ja lisab kohe kommentaari
+* git commit -m "change text"   / salvestab muudatuse ja lisab kohe kommentaari
