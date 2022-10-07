@@ -92,14 +92,14 @@
 
 ## Git remote
 ¤ manipuleerib kaug serveriga
-* git remote -v                                 / näitab kõiki ühendusi
 * git remote add <name> <repo-SSH>              / uue ühenduse loomine (lisab fetch ja push repo)
 * git remote rm <name>                          / kustutab ühenduse
 * git remote rename <old-name> <new-name>       / nimetab ühenduse ümber
+* git remote -v                                 / näitab kõiki ühendusi
 
 ## Git push
 * git push                                      / lisab commit serverisse
 * git push <name-to> <branch-name-to>           / saadab andmed nimetatud kohta
 
 ## Git pull
-* git pull                      / tõmbab viimase uuenduse serverist
+* git pull                                      / tõmbab viimase uuenduse serverist
