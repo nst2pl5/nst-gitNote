@@ -102,6 +102,5 @@
 * git push <name-to> <branch-name-to>           / saadab andmed nimetatud kohta
 
 ## Git pull
-* git pull                                      / tõmbab viimase uuenduse serverist
-
-test new repo commit
+* git pull                                          / tõmbab viimase uuenduse serverist
+* git pull <name-from> <branch-name-from>           / tõmbab andmed nimetatud kohast
