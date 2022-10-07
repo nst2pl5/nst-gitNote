@@ -1,7 +1,12 @@
-### GIT Associative/notes
+### GIT Associative
 ¤ https://www.atlassian.com/ru/git
 ¤ GIT Sheme: repo -> stg -> commit.
 ¤ Git commit arvutab kogu projekti hash summa ja alles siis kui vastav hash erineb eelmisest salvestab selle
+
+## Git SHH connect
+* ssh-keygen -o -t rsa -C "nikita.stsigorjev@gmail.com"             / to terminal, add ssh to C:\Users\Kasutaja\.ssh
+¤ copy public key and paste to git settings->SSH and GPG keys
+* git clone <git-repo-SHH>                                          / laeb giti serverist alla seal oleva repo
 
 ## Git config
 ¤ Konfigureerib andmeid
@@ -65,8 +70,10 @@
 ¤ saab rakendada reeglid mida git ignoreerib
 * loo fail .gitignore
 
-================================================================================
-Git branches tree
+## Git reset
+* git reset --hard                      / võtab kõik muudatused tagasi
+* git reset --hard <commit-hash>        / võtab kõik muudatused tagasi ja viib HEAD kindla commiti olekusse
+* git reset --mixed                     / võtab tagasi viimase stg lisatud faili
 
 ## Git branch
 * git branch -a                 / näitab kõiki repos olevaid branche
@@ -74,7 +81,25 @@ Git branches tree
 * git branch -d <branch-name>   / kustutab valitud branch (kui kasutada -D siis kustutab igalt poolt)
 
 ## Git checkout
-* git checkout <branch-name>    / viib repo üle uuele branchile
+* git checkout <branch-name>                    / viib repo üle nimetatud branchile
+* git checkout <commit-hash>                    / viib repo üle nimetatud commitile
+* git checkout -b <branch-name>                 / teeb uue branch ja kohe viib HEAD sellele
+* git checkout -b <branch-name> <commit-hash>   / teeb uue branch, viib selle commiti olekusse ja kohe viib HEAD sellele
+* git checkout <file-name>                      / viib kindla faili algsesse olekusse
 
-## Git bugfixmerge
+## Git merge
 * git merge <branch-name>       / sulatab käesoleva branchi muudatused valitud branchiga
+
+## Git remote
+¤ manipuleerib kaug serveriga
+* git remote -v                                 / näitab kõiki ühendusi
+* git remote add <name> <repo-SSH>              / uue ühenduse loomine (lisab fetch ja push repo)
+* git remote rm <name>                          / kustutab ühenduse
+* git remote rename <old-name> <new-name>       / nimetab ühenduse ümber
+
+## Git push
+* git push                                      / lisab commit serverisse
+* git push <name-to> <branch-name-to>           / saadab andmed nimetatud kohta
+
+## Git pull
+* git pull                      / tõmbab viimase uuenduse serverist
