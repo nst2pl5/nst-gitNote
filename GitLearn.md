@@ -98,9 +98,20 @@
 * git remote -v                                 / näitab kõiki ühendusi
 
 ## Git push
-* git push                                      / lisab commit serverisse
-* git push <name-to> <branch-name-to>           / saadab andmed nimetatud kohta
+* git push                                              / lisab commit serverisse
+* git push <name-to> <branch-name-to>                   / saadab andmed nimetatud kohta
+* git push --set-upstream <name-to> <branch-name-to>    / peale seda võib lihtsalt: git push ja git pull
 
 ## Git pull
 * git pull                                          / tõmbab viimase uuenduse serverist
 * git pull <name-from> <branch-name-from>           / tõmbab andmed nimetatud kohast
+
+## Git fetch
+* git fetch                                     / uuendab repo kõige uuemaks
+
+## Git rebase
+* git rebase master                             / ühendab 2 haru commit omavahel
+
+## Git tag
+* git tag -a <tag-name> -m "<tag-commit>"       / lisab tagi jooksvale commitile
+* git push --tags                               / lisab kõik tagid srverisse
