@@ -103,3 +103,5 @@
 
 ## Git pull
 * git pull                      / tõmbab viimase uuenduse serverist
+
+test new repo commit
